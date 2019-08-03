@@ -22,6 +22,7 @@ class Page{
         }else{
             header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
             die();
+            
         }
     }
 

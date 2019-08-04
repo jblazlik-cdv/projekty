@@ -2,3 +2,7 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-zA-Z-\/_0-9]+)/?$ index.php?uri=$1 [L]
+
+#do poprawy gdy doda sie na serwer
+RewriteCond %{THE_REQUEST} ^.*/index\.(php|html)
+RewriteRule ^(.*)index.(php|html)$ /projekty/new_cms/$1 [R=301,L]

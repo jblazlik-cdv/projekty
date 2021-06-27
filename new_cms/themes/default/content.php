@@ -2,5 +2,6 @@
     <main>
         <?php
             echo $page->content;
+            echo "test";
         ?>
         
